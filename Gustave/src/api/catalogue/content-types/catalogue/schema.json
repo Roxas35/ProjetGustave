@@ -1,0 +1,95 @@
+{
+  "kind": "collectionType",
+  "collectionName": "catalogues",
+  "info": {
+    "singularName": "catalogue",
+    "pluralName": "catalogues",
+    "displayName": "Catalogue",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Nom": {
+      "type": "string",
+      "required": true
+    },
+    "Photo": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "Secteur": {
+      "type": "string",
+      "required": true
+    },
+    "Description": {
+      "type": "text",
+      "required": true
+    },
+    "Bas": {
+      "type": "integer",
+      "required": true
+    },
+    "Moyen": {
+      "type": "integer",
+      "required": true
+    },
+    "Haut": {
+      "type": "integer",
+      "required": true
+    },
+    "M2": {
+      "type": "integer",
+      "required": true
+    },
+    "Ch": {
+      "type": "integer",
+      "required": true
+    },
+    "Sdb": {
+      "type": "integer",
+      "required": true
+    },
+    "Chef": {
+      "type": "enumeration",
+      "enum": [
+        "Forfait sur mesure"
+      ],
+      "required": true,
+      "default": "Forfait sur mesure"
+    },
+    "Categorie": {
+      "type": "enumeration",
+      "enum": [
+        "Bord de mer",
+        "Campagne",
+        "Ville",
+        "Montagne"
+      ],
+      "required": true,
+      "default": "Bord de mer"
+    },
+    "Type": {
+      "type": "enumeration",
+      "enum": [
+        "Manoir",
+        "Villa",
+        "Atypique",
+        "Maison",
+        "Chalet",
+        "Appartement"
+      ],
+      "required": true,
+      "default": "Manoir"
+    }
+  }
+}
