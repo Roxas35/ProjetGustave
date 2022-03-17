@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>les vacances chez Gustave</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/profil.css" />
+  </head>
+  <body>
+    <header class="deskNav">
+      <div class="logo">
+        <a href="/html/index.html"
+          ><img src="/img/logoGustave.svg" alt="logo"
+        /></a>
+      </div>
+      <div class="iconNav">
+        <img
+          id="buttonProfil"
+          src="/svg/person-circle-outline.svg"
+          alt="icon profil"
+        />
+        <img id="buttonMenu" src="/svg/menu-outline.svg" alt="icon menu" />
+      </div>
+      <nav class="menuDesk">
+        <ul class="menu">
+          <li><a href="/html/index.html">Accueil</a></li>
+          <li><a href="/html/recherche.html">Recherche</a></li>
+          <li><a href="/html/administrateur.html">Administrateurs</a></li>
+          <li><a href="/html/profil.html">Profil</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="profil">
+      <section class="compte">
+        <h1>Mon compte</h1>
+        <h4>Nom Prénom</h4>
+      </section>
+
+      <div class="line"></div>
+
+      <section class="modify">
+        <div class="setting">
+          <h4 class="active">Mes informations</h4>
+          <h4>Mes commandes</h4>
+          <h4>Mes réclamations</h4>
+        </div>
+
+        <div class="info">
+          <form action="" class="form">
+            <h3>Informations</h3>
+            <div class="row">
+              <div class="col lName">
+                <label for="lastName">Nom</label>
+                <input type="text" />
+              </div>
+              <div class="col lName">
+                <label for="lastName">Prénom</label>
+                <input type="text" />
+              </div>
+            </div>
+            <div class="email">
+              <label for="email">Email</label> <br />
+              <input type="email" />
+            </div>
+            <h5>Changement de mot de passe</h5>
+            <div class="row">
+              <div class="col mdp">
+                <label for="mdp">Mot de passe actuel</label>
+                <input type="password" />
+              </div>
+              <div class="col mdp">
+                <label for="nmdp">Nouveau mot de passe</label>
+                <input type="password" />
+              </div>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div>
+        <div class="footer-link">
+          <p><a href="#">Termes & conditions</a></p>
+          <hr class="footer-hr-long" />
+        </div>
+        <div class="footer-link">
+          <p><a href="#">Privacy policy</a></p>
+          <hr />
+        </div>
+        <div class="footer-link">
+          <p><a href="#">Cookie policy </a></p>
+          <hr />
+        </div>
+      </div>
+
+      <p class="footer-left">© 2022 All rights reserved.</p>
+    </footer>
+    <script src="/js/script.js"></script>
+  </body>
+</html>

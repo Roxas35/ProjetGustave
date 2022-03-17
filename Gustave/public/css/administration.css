@@ -1,0 +1,267 @@
+@font-face {
+    font-family: Glamore;
+    /* src: url("./font/glamore-font/Glamore-JRVvK.otf") format("otf"), */
+      src:  url("./font/glamore-font/Glamore-VGyee.ttf") format("ttf");
+   }
+
+@import url('https://fonts.googleapis.com/css2?family=Tinos:wght@400;700&display=swap');
+
+@keyframes Maurice {
+    0%   { transform: translateY(0); }
+    100%  { transform: translateY(20px); }
+  }
+
+  @keyframes Jean {
+    0%   { transform: translateY(0); }
+    100%  { transform: translateY(20px); }
+  }
+
+  @keyframes Marc {
+    0%   { transform: translateY(0); }
+    100%  { transform: translateY(20px); }
+  }
+
+  @keyframes Paul {
+    0%   { transform: translateY(0); }
+    100%  { transform: translateY(20px); }
+  }
+
+  @keyframes Martin {
+    0%   { transform: translateY(0); }
+    100%  { transform: translateY(20px);
+     }
+  }
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.deskNav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 10vh;
+}
+
+.logo img {
+    width: 70%
+}
+
+.logo {
+    margin-left: 20px;
+}
+
+.iconNav {
+    display: flex;
+    justify-content: space-between;
+    width: 100px;
+    margin-right: 40px;
+    cursor: pointer;
+}
+
+.iconNav img{
+    max-width: 35px;
+    max-height: 35px;
+}
+
+/* click on menu */
+/* Menu */
+.menuDesk {
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    top: 0%;
+    right: 8%;
+    width: 1000px;
+    height: 10vh;
+    background-color: transparent;
+    display: none;
+}
+
+.displayFlex {
+    display: flex;
+    animation-name: burger;
+    animation-duration: 2s;
+}
+
+@keyframes burger {
+    0% {right: 0px; top: 0px}
+    100% {right: 8%; top: 0px}
+}
+
+.menu {
+    position: absolute;
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    width: 100%;
+    background-color: transparent;
+}
+
+.menu li {
+    font-family: 'Glamore';
+    font-size: 30px;
+    background-color: transparent;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: #000;
+}
+
+.menuDesk::before {
+    position: absolute;
+    content: '';
+    height: 50px;
+    left: 33%;
+    width: 3px;
+    background-color: var(--colorPrincipal);
+}
+
+.menuDesk::after {
+    position: absolute;
+    content: '';
+    height: 50px;
+    right: 33%;
+    width: 3px;
+    background-color: var(--colorPrincipal);
+}
+
+main{
+    font-family: "Tinos",sans-serif;
+    color: #242424;
+}
+
+section {
+    margin: auto;
+    padding: auto;
+}
+
+.ad {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    margin: 50px 60px 0px 60px;
+}
+
+.ad2 {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin: 50px 60px 0px 60px;
+}
+
+
+.Maurice img{
+    width: 70%;
+    border-radius: 5%;
+    
+}
+
+.Maurice:hover {
+    animation-name: Maurice;
+    animation-timing-function: ease;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+
+.Jean img{
+    width: 70%;
+    border-radius: 5%; 
+}
+
+.Jean:hover {
+    animation-name: Jean;
+    animation-timing-function: ease;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+.Marc img{
+    width: 71%;
+    border-radius: 5%;
+}
+
+.Marc:hover {
+    animation-name: Marc;
+    animation-timing-function: ease;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+.Paul img{
+    width: 70%;
+    border-radius: 5%;
+}
+
+.Paul:hover {
+    animation-name: Paul;
+    animation-timing-function: ease;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+.Martin img{
+    width: 70%;
+    border-radius: 5%;
+}
+
+.Martin:hover {
+    animation-name: Martin;
+    animation-timing-function: ease;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+h3{
+    margin: 5px;
+    font-size: 19px;
+    font-family: 'Glamore';
+    text-decoration: none;
+}
+
+footer {
+    height: 10vh;
+    width: 100%;
+    background-color: #F1F1F1;
+    display: flex;
+    align-items: center;
+    gap: 45vw;
+    margin-top: 55px;
+}
+
+footer a {
+    text-decoration: none;
+    color: #242424;
+}
+
+footer>div {
+    display: flex;
+    gap: 4vw;
+    padding-left: 40px;
+    
+}
+
+footer hr {
+    border: none;
+    background-color: #DCB253;
+    width: 100px;
+    height: 3px;
+}
+
+.footer-hr-long {
+    width: 150px;
+}
+
+.footer-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}

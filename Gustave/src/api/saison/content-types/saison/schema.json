@@ -1,0 +1,68 @@
+{
+  "kind": "collectionType",
+  "collectionName": "saisons",
+  "info": {
+    "singularName": "saison",
+    "pluralName": "saisons",
+    "displayName": "Saison",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Debut": {
+      "type": "enumeration",
+      "enum": [
+        "Janvier",
+        "Février",
+        "Mars",
+        "Avril",
+        "Mai",
+        "Juin",
+        "Juillet",
+        "Août",
+        "Septembre",
+        "Octobre",
+        "Novembre",
+        "Décembre"
+      ],
+      "required": true,
+      "default": "Janvier"
+    },
+    "Fin": {
+      "type": "enumeration",
+      "enum": [
+        "Janvier",
+        "Février",
+        "Mars",
+        "Avril",
+        "Mai",
+        "Juin",
+        "Juillet",
+        "Août",
+        "Septembre",
+        "Octobre",
+        "Novembre",
+        "Décembre"
+      ],
+      "required": true,
+      "default": "Janvier"
+    },
+    "Nom": {
+      "type": "enumeration",
+      "enum": [
+        "Basse",
+        "Moyenne",
+        "Haute"
+      ],
+      "required": true,
+      "default": "Basse"
+    },
+    "Prix": {
+      "type": "integer",
+      "required": true
+    }
+  }
+}

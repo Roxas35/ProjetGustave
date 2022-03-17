@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>produit</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/produit.css">
+</head>
+<body>
+    <header class="deskNav">
+        <div class="logo">
+            <a href="/html/index.html"><img src="/img/logoGustave.svg" alt="logo"/></a>
+        </div>
+        <div class="iconNav">
+            <img id="buttonProfil" src="/svg/person-circle-outline.svg" alt="icon profil">
+            <img id="buttonMenu" src="/svg/menu-outline.svg" alt="icon menu">
+        </div>
+        <nav class="menuDesk">
+            <ul class="menu">
+                <li><a href="/html/index.html">Accueil</a></li>
+                <li><a href="/html/recherche.html">Recherche</a></li>
+                <li><a href="/html/administrateur.html">Administrateurs</a></li>
+                <li><a href="/html/profil.html">Profil</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <header class="mobNav">
+        <div class="logo">
+            <img src="/img/logo.png" alt="logo">
+        </div>
+        <div class="iconNav">
+            <img src="/svg/person-circle-outline.svg" alt="icon profil">
+            <img src="/svg/menu-outline.svg" alt="icon menu">
+        </div>
+    </header>
+    <main class="main-produit">
+        <div class="thanks">
+            <div class="remerciement">
+                <p class="glamore">Merci de votre réservation</p>
+            </div>
+        </div>
+         <div class="block-booking">
+            <section class="container-form">
+                <div class="booking">
+                    <span id="close">
+                        <img  class="close" src="/svg/close-outline.svg" alt="close" >
+                    </span>
+                    <h2 class="glamore form-h2">Réservation</h2>
+                    <div class="container-booking">
+                        <div class="container-calendar"> 
+                        <div class="booking-details">
+                            <form class="booking-form">
+                                <h3 class="glamore">Belle Epoque</h3>
+                                <div class="select-booking">
+                                    <p>Nbs de Personnes</p>
+                                    <input class="input-number" type="number" name="numbersPeople">
+                                </div>
+                                <div class="select-booking">
+                                    <p>Chef Cuisinier</p>
+                                    <input class="input-check" type="checkbox" name="chef">
+                                </div>
+                                <div class="select-booking">
+                                    <p>Service de nettoyage</p>
+                                    <input class="input-check" type="checkbox" name="cleaning">
+                                </div>
+                                <div class="fiche-end">
+                                    <div id="respr">
+                                    </div>
+                                    <button action="submit" class="btn-booking">Confirmer</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="produit"></div>
+    </main>
+    <footer>
+        <div>
+            <div class="footer-link">
+                <p><a href="#">Termes & conditions</a></p>
+                <hr class="footer-hr-long">
+            </div>
+            <div class="footer-link">
+                <p><a href="#">Privacy policy</a></p>
+                <hr>
+            </div>
+            <div class="footer-link">
+                <p><a href="#">Cookie policy </a></p>
+                <hr>
+            </div> 
+        </div>
+        
+        <p class="footer-left">© 2022 All rights reserved.</p>
+    </footer>
+    <script src="/js/script.js"></script>
+    <script src="/js/app.js"></script>
+</body>
+</html>

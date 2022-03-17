@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>les vacances chez Gustave</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/booking.css" />
+  </head>
+  <body>
+    <main class="body-form">
+      <section class="container-form">
+        <form class="booking">
+          <img
+            class="close"
+            id="close"
+            src="/svg/close-outline.svg"
+            alt="close"
+          />
+          <h2 class="glamore form-h2">Réservation</h2>
+          <div class="container-booking">
+            <div class="thanks">
+              <div class="remerciement">
+                <img
+                  class="thank-close"
+                  src="/svg/close-outline.svg"
+                  alt="close"
+                />
+                <p class="glamore">Merci de votre réservation</p>
+              </div>
+            </div>
+            <div class="container-calendar">
+              <form>
+                <div class="column">
+                  <label for="departure">Arrivé</label>
+                  <input type="date" />
+                </div>
+                <div class="column">
+                  <label for="arrival">Départ</label>
+                  <input type="date" />
+                </div>
+              </form>
+            </div>
+            <div id="demo-booking-multiple"></div>
+            <div class="booking-details">
+              <h3 class="glamore">Belle Epoque</h3>
+              <div class="select-booking">
+                <p>Nbs de Personnes</p>
+                <input
+                  class="input-number"
+                  type="number"
+                  name="numbersPeople"
+                />
+              </div>
+              <div class="select-booking">
+                <p>Chef Cuisinier</p>
+                <input type="checkbox" name="chef" />
+              </div>
+              <div class="select-booking">
+                <p>Service de nettoyage</p>
+                <input type="checkbox" name="cleaning" />
+              </div>
+              <div class="fiche-end">
+                <div>
+                  <p class="fiche-price">3000€</p>
+                  <p>/ semaine</p>
+                </div>
+                <button class="btn-reservation">Réservation</button>
+              </div>
+            </div>
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <div class="remerciement">
+      <img class="thank-close" src="/svg/close-outline.svg" alt="close" />
+      <p class="glamore">Merci de votre réservation</p>
+    </div>
+
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> -->
+    <script src="/js/jquery.js"></script>
+    <script src="/js/script.js"></script>
+  </body>
+</html>

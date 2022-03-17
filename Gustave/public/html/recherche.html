@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>les vacances chez Gustave</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/recherche.css" />
+  </head>
+  <body>
+    <header class="deskNav">
+      <div class="logo">
+        <a href="/html/index.html"
+          ><img src="/img/logoGustave.svg" alt="logo"
+        /></a>
+      </div>
+      <div class="iconNav">
+        <img
+          id="buttonProfil"
+          src="/svg/person-circle-outline.svg"
+          alt="icon profil"
+        />
+        <img id="buttonMenu" src="/svg/menu-outline.svg" alt="icon menu" />
+      </div>
+      <nav class="menuDesk">
+        <ul class="menu">
+          <li><a href="/html/index.html">Accueil</a></li>
+          <li><a href="/html/recherche.html">Recherche</a></li>
+          <li><a href="/html/administrateur.html">Administrateurs</a></li>
+          <li><a href="/html/profil.html">Profil</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <header class="mobNav">
+      <div class="logo">
+        <img src="/img/logoMobile.png" alt="logo" />
+      </div>
+      <div class="iconNav">
+        <img src="/svg/person-circle-outline.svg" alt="icon profil" />
+        <img src="/svg/menu-outline.svg" alt="icon menu" />
+      </div>
+    </header>
+
+    <main>
+      <section class="search">
+        <form class="search-bar">
+          <div class="q1 column">
+            <label for="where">Où aller-vous ?</label>
+            <input type="text" />
+          </div>
+          <div class="flexBar">
+            <div class="column">
+              <label for="departure">Arrivé</label>
+              <input type="date" />
+            </div>
+            <div class="column">
+              <label for="arrival">Départ</label>
+              <input type="date" />
+            </div>
+          </div>
+          <div class="flexBar">
+            <div class="column">
+              <label for="adult">Personnes</label>
+              <input type="number" />
+            </div>
+            <div class="column">
+              <label for="bedroom">Chambres</label>
+              <input type="number" />
+            </div>
+          </div>
+          <button>
+            <img src="/svg/search-outline.svg" alt="icon search" />
+          </button>
+        </form>
+      </section>
+
+      <section class="houseSearch">
+        <div class="categories">
+          <div class="price">
+            <h3>Prix</h3>
+            <label for="progressPrice">0</label>
+            <div
+              class="progressPrice"
+              role="progressbar"
+              aria-valuemin="0"
+              aria-valuemax="20000"
+              aria-valuenow="0"
+            ></div>
+            <input type="range" value="0" min="0" max="20000" />
+          </div>
+          <div class="people">
+            <h3>Personnes</h3>
+            <label for="progressPrice">0</label>
+            <div
+              class="progressPrice"
+              role="progressbar"
+              aria-valuemin="0"
+              aria-valuemax="20000"
+              aria-valuenow="0"
+            ></div>
+            <input type="range" value="0" min="0" max="20" />
+          </div>
+
+          <div class="stuf">
+            <h3>Equipements</h3>
+            <div class="checkbox">
+              <p>Piscine</p>
+              <input type="checkbox" />
+            </div>
+            <div class="checkbox">
+              <p>Jardin</p>
+              <input type="checkbox" />
+            </div>
+            <div class="checkbox">
+              <p>Spa</p>
+              <input type="checkbox" />
+            </div>
+            <div class="checkbox">
+              <p>Jacuzzi</p>
+              <input type="checkbox" />
+            </div>
+          </div>
+        </div>
+
+        <div class="blockHouse"></div>
+      </section>
+    </main>
+    <footer>
+      <div>
+        <div class="footer-link">
+          <p><a href="#">Termes & conditions</a></p>
+          <hr class="footer-hr-long" />
+        </div>
+        <div class="footer-link">
+          <p><a href="#">Privacy policy</a></p>
+          <hr />
+        </div>
+        <div class="footer-link">
+          <p><a href="#">Cookie policy </a></p>
+          <hr />
+        </div>
+      </div>
+
+      <p class="footer-left">© 2022 All rights reserved.</p>
+    </footer>
+
+    <script src="/js/script.js"></script>
+  </body>
+</html>

@@ -90,6 +90,16 @@
       ],
       "required": true,
       "default": "Manoir"
+    },
+    "Equipements": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::equipement.equipement"
+    },
+    "Saisons": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::saison.saison"
     }
   }
 }

@@ -1,0 +1,323 @@
+/* Page recherche */
+.houseSearch {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 50px;
+  width: 100%;
+  min-height: 100vh;
+  max-height: 100%;
+}
+
+
+.categories {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 600px;
+  width: 320px;
+  border: 1px solid var(--colorPrincipal);
+  border-radius: 10px;
+  padding: 30px 40px;
+}
+
+h3 {
+  font-family: "Tinos";
+  font-weight: 400;
+  color: var(--colorPrincipal);
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+
+.checkbox {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.stuf p {
+  font-size: 20px;
+}
+
+input[type="range"] {
+  height: 34px;
+  -webkit-appearance: none;
+  margin: 10px 0;
+  width: 100%;
+}
+input[type="range"]:focus {
+  outline: none;
+}
+input[type="range"]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 11px;
+  cursor: pointer;
+  background: var(--colorPrincipal);
+  border-radius: 5px;
+}
+input[type="range"]::-webkit-slider-thumb {
+  box-shadow: 1px 1px 1px var(---colorPrincipal);
+  border: 1px solid var(--colorPrincipal);
+  height: 23px;
+  width: 23px;
+  border-radius: 15px;
+  background: #ffffff;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -8px;
+}
+input[type="range"]::-moz-range-track {
+  width: 100%;
+  height: 11px;
+  cursor: pointer;
+  background: var(--colorPrincipal);
+  border-radius: 5px;
+}
+
+input[type="range"]::-moz-range-thumb {
+  box-shadow: 1px 1px 1px var(---colorPrincipal);
+  border: 1px solid var(--colorPrincipal);
+  height: 23px;
+  width: 23px;
+  border-radius: 15px;
+  background: #ffffff;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -8px;
+}
+
+input[type="range"]::-ms-thumb {
+  box-shadow: 1px 1px 1px var(---colorPrincipal);
+  border: 1px solid var(--colorPrincipal);
+  height: 23px;
+  width: 23px;
+  border-radius: 15px;
+  background: #ffffff;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -8px;
+}
+
+input[type="range"]::-ms-track {
+  width: 100%;
+  height: 11px;
+  cursor: pointer;
+  background: var(--colorPrincipal);
+  border-radius: 5px;
+}
+
+/* checkbox */
+input[type="checked"]:checked {
+  background-color: 1px solid red;
+}
+
+#chef {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+#chef p {
+  margin-right: 10px;
+}
+#chef input {
+  margin-top: 7px;
+}
+
+/* Block House */
+.blockHouse {
+  display: flex;
+  flex-direction: column;
+  width: 65%;
+  height: auto;
+}
+
+.blockHouse a {
+  text-decoration: none;
+  color: black;
+}
+
+/* New House */
+.newHouse {
+  display: flex;
+  width: 100%;
+  height: 200px;
+  border-radius: 5px;
+  border: 1px solid var(--colorPrincipal);
+  margin-bottom: 40px;
+}
+
+.newHouse img {
+  height: 100%;
+  max-width: 20vw;
+  min-width: 20vw;
+  border-radius: 5px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+h5 {
+  font-family: "Glamore";
+  font-size: 22px;
+}
+
+.description {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 30px;
+}
+
+.dColumn p {
+  font-size: 20px;
+  font-family: "Tinos";
+  font-weight: 400;
+}
+
+.dColumn {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-content: space-between;
+  height: 100%;
+  max-width: 45%;
+}
+
+.price {
+  font-size: 15px;
+  line-height: 1;
+  font-weight: bolder;
+}
+
+span {
+  font-size: 18px;
+  color: #696969;
+}
+
+/* Media  */
+@media (max-width: 600px) {
+  .search {
+    height: 600px;
+    width: 100%;
+    margin: 0px;
+    background-image: url(/img/backgroundMobile.png);
+    background-position: center;
+    background-size: cover;
+  }
+
+  .houseSearch {
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+  }
+
+  .categories {
+    height: 430px;
+    width: 320px;
+    padding: 20px 40px;
+    margin-bottom: 50px;
+    margin-top: -45px;
+    background-color: #FFF;
+  }
+  input[type="range"] {
+    height: 34px;
+    -webkit-appearance: none;
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+  }
+  input[type="range"]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 5.5px;
+    cursor: pointer;
+    background: var(--colorPrincipal);
+    border-radius: 5px;
+  }
+  input[type="range"]::-webkit-slider-thumb {
+    box-shadow: 1px 1px 1px var(---colorPrincipal);
+    border: 1px solid var(--colorPrincipal);
+    height: 13px;
+    width: 13px;
+    border-radius: 15px;
+    background: #ffffff;
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -4px;
+  }
+  input[type="range"]::-moz-range-track {
+    width: 100%;
+    height: 5.5px;
+    cursor: pointer;
+    background: var(--colorPrincipal);
+    border-radius: 5px;
+  }
+  
+  input[type="range"]::-moz-range-thumb {
+    box-shadow: 1px 1px 1px var(---colorPrincipal);
+    border: 1px solid var(--colorPrincipal);
+    height: 13px;
+    width: 13px;
+    border-radius: 15px;
+    background: #ffffff;
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -4px;
+  }
+  
+  input[type="range"]::-ms-thumb {
+    box-shadow: 1px 1px 1px var(---colorPrincipal);
+    border: 1px solid var(--colorPrincipal);
+    height: 13px;
+    width: 13px;
+    border-radius: 15px;
+    background: #ffffff;
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -4px;
+  }
+  
+  input[type="range"]::-ms-track {
+    width: 100%;
+    height: 5.5px;
+    cursor: pointer;
+    background: var(--colorPrincipal);
+    border-radius: 5px;
+  }
+  .checkbox {
+    width: 80%;
+  }
+
+  .stuf p {
+    font-size: 16px;
+  }
+
+  .blockHouse {
+    width: 85%;
+  }
+
+  .newHouse {
+    flex-direction: column;
+    height: 350px;
+  }
+  .newHouse img {
+    width: 100%;
+    height: 50%;
+    background-size: cover;
+    background-position: center;
+  }
+  .description {
+    padding: 20px;
+    align-items: space-around;
+    width: 100%;
+    height: 100%;
+    gap: 10px;
+  }
+  .dColumn {
+    max-width: 100%;
+  }
+  .dColumn p {
+    font-size: 16px;
+    margin-right: 15px;
+  }
+}

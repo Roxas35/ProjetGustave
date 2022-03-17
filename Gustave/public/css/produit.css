@@ -1,0 +1,42 @@
+@media (max-width: 600px) {
+    .main-produit {
+        height: 100vh;
+        width: 100%;
+    }
+    .produit {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        min-height: 90vh;
+        padding: 20px;
+        gap: 30px;
+    }
+    
+    .produit img {
+        width: 100%;
+        height: auto;
+    }
+    
+    .fiche {
+        width: 100%;
+        padding: 20px;
+    }
+    
+    .equipement {
+        width: 100%;
+        flex-wrap: wrap;
+        margin-left: 0;
+    }
+
+    .fiche-end {
+        gap: 35px;
+    }
+    .btn-reservation {
+        width: 130px;
+        height: 40px;
+    }
+    p {
+        font-size: 14px;
+    }
+}

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>les vacances chez Gustave</title>
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <header class="deskNav">
+      <div class="logo">
+        <a href="/html/index.html"
+          ><img src="/img/logoGustave.svg" alt="logo"
+        /></a>
+      </div>
+      <div class="iconNav">
+        <img
+          id="buttonProfil"
+          src="/svg/person-circle-outline.svg"
+          alt="icon profil"
+        />
+        <img id="buttonMenu" src="/svg/menu-outline.svg" alt="icon menu" />
+      </div>
+      <nav class="menuDesk">
+        <ul class="menu">
+          <li><a href="/html/index.html">Accueil</a></li>
+          <li><a href="/html/recherche.html">Recherche</a></li>
+          <li><a href="/html/administrateur.html">Administrateurs</a></li>
+          <li><a href="/html/profil.html">Profil</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <header class="mobNav">
+      <div class="logo">
+        <img src="/img/logoMobile.png" alt="logo" />
+      </div>
+      <div class="iconNav">
+        <img src="/svg/person-circle-outline.svg" alt="icon profil" />
+        <img src="/svg/menu-outline.svg" alt="icon menu" />
+      </div>
+    </header>
+    <div class="overlay"></div>
+    <main>
+      <div class="absolute">
+        <form class="formDesk">
+          <div>
+            <h1>Les Vacances de gustave</h1>
+            <label for="" class="connexion"
+              >Adresse email
+              <input type="email" class="identifier" />
+            </label>
+            <label for="" class="connexion"
+              >Mot de passe
+              <input type="password" class="password" />
+            </label>
+            <input type="submit" class="connex connexion" value="Connexion" />
+            <p class="failed">Email ou mot de passe incorrect.</p>
+            <button class="deconnexion">Deconnexion</button>
+          </div>
+        </form>
+      </div>
+      <section class="main-img">
+        <form class="search-bar">
+          <div class="q1 column">
+            <label for="where">Où aller-vous ?</label>
+            <input type="text" />
+          </div>
+          <div class="flexBar">
+            <div class="column">
+              <label for="departure">Arrivé</label>
+              <input type="date" />
+            </div>
+            <div class="column">
+              <label for="arrival">Départ</label>
+              <input type="date" />
+            </div>
+          </div>
+          <div class="flexBar">
+            <div class="column">
+              <label for="adult">Personnes</label>
+              <input type="number" />
+            </div>
+            <div class="column">
+              <label for="bedroom">Chambres</label>
+              <input type="number" />
+            </div>
+          </div>
+          <button>
+            <img src="/svg/search-outline.svg" alt="icon search" />
+          </button>
+        </form>
+      </section>
+      <section class="section-city">
+        <div>
+          <h2>Voyagez en France</h2>
+          <h4>Pourquoi pas ici ?</h4>
+        </div>
+
+        <div class="city">
+          <div class="city-card">
+            <img src="/img/paris.jpg" alt="paris" />
+            <div>
+              <h5 class="city-name">Paris</h5>
+              <hr class="gold-city" />
+            </div>
+          </div>
+          <div class="city-card">
+            <img src="/img/marseille.jpg" alt="marseille" />
+            <div>
+              <h5 class="city-name">Marseille</h5>
+              <hr class="gold-city-long" />
+            </div>
+          </div>
+          <div class="city-card">
+            <img src="/img/bordeaux.jpg" alt="bordeaux" />
+            <div>
+              <h5 class="city-name">Bordeaux</h5>
+              <hr class="gold-city-long" />
+            </div>
+          </div>
+          <div class="city-card">
+            <img src="/img/lille.jpg" alt="lille" />
+            <div>
+              <h5 class="city-name">Lille</h5>
+              <hr class="gold-city" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section-star">
+        <div>
+          <h2>Laissez vous tentez par nos coups de coeur</h2>
+          <h4>Nos locations les mieux notées</h4>
+        </div>
+
+        <div class="star-location">
+          <div class="star-card">
+            <img src="/img/luxuryHouse1.jpg" alt="best-location-1" />
+            <div>
+              <hr class="gold-star" />
+              <h5>Découvrir</h5>
+            </div>
+          </div>
+          <div class="star-card">
+            <img src="/img/luxuryHouse2.jpg" alt="best-location-2" />
+            <div>
+              <hr class="gold-star" />
+              <h5>Découvrir</h5>
+            </div>
+          </div>
+          <div class="star-card">
+            <img src="/img/luxuryHouse3.jpg" alt="best-location-3" />
+            <div>
+              <hr class="gold-star" />
+              <h5>Découvrir</h5>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div>
+        <div class="footer-link">
+          <p><a href="#">Termes & conditions</a></p>
+          <hr class="footer-hr-long" />
+        </div>
+        <div class="footer-link">
+          <p><a href="#">Privacy policy</a></p>
+          <hr class="footer-hr-long" />
+        </div>
+        <div class="footer-link">
+          <p><a href="#">Cookie policy </a></p>
+          <hr class="footer-hr-long" />
+        </div>
+      </div>
+      <p class="footer-left">© 2022 All rights reserved.</p>
+    </footer>
+    <script src="/js/login.js"></script>
+    <script src="/js/script.js"></script>
+  </body>
+</html>
