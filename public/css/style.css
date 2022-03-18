@@ -124,18 +124,19 @@
 }
 
 #buttonMenu {
-    display: none;
+  display: none;
 }
 
 /* Connexion */
 
 .absolute {
   position: absolute;
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
-  height: 90vh;
   width: 100%;
+  height: 100%;
+  z-index: 100;
 }
 
 .formDesk {
@@ -146,8 +147,8 @@
   background-color: #fff;
   border: 1px solid var(--colorPrincipal);
   border-radius: 10px;
-  display: none;
-  z-index: 10;
+  display: flex;
+  z-index: 100;
 }
 
 .formDesk div {
@@ -159,16 +160,12 @@
   height: 100%;
 }
 
-.activeProfil {
-  display: flex;
-}
-
 .overlay {
-    position: absolute;
-    width: 100vw;
-    height: 100vh;
-    background-color: rgba(0, 0, 0, 0.0);
-    z-index: 10;
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0);
+  z-index: -10;
 }
 
 .formDesk h1 {
@@ -236,6 +233,7 @@ input {
   border-radius: 5px;
   display: none;
   padding: 20px 0 20px 20px;
+  z-index: 10;
 }
 
 .search-bar input {
@@ -346,10 +344,9 @@ main h2 {
 .city {
   display: flex;
   margin-top: 40px;
-  max-width: 100%;
   min-height: 30vh;
-  max-width: 100%;
-  justify-content: center;
+  max-height: 100%;
+  justify-content: space-around;
   flex-wrap: wrap;
 }
 
@@ -397,6 +394,7 @@ main h2 {
 
 .star-card img {
   max-height: 422px;
+  height: 262px;
   max-width: 350px;
   background-size: contain;
   border-top-left-radius: 160px;
@@ -527,7 +525,7 @@ footer hr {
 
 .fiche-end {
   display: flex;
-  gap: 50px;
+  gap: 100px;
 }
 
 .fiche-price {
@@ -632,7 +630,13 @@ footer hr {
 .booking-form {
   display: flex;
   flex-direction: column;
+  width: 400px;
   gap: 25px;
+}
+
+.booking-details {
+  display: flex;
+  gap: 50px;
 }
 
 .select-booking {
@@ -651,7 +655,21 @@ footer hr {
   width: 20px;
   height: 20px;
   text-align: center;
+  padding: 0;
 }
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
 /* Remerciement */
 
 .remerciement {
@@ -805,5 +823,71 @@ footer hr {
   }
   footer div {
     padding-left: 5px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .search-bar {
+    max-width: 70%;
+    height: 90px;
+    background-color: #f1f1f1;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+    display: none;
+    padding: 20px 0 20px 20px;
+    z-index: 10;
+  }
+
+  .search-bar input {
+    background-color: #dadada;
+    border-radius: 5px;
+    width: 100%;
+    height: 30px;
+    border: none;
+  }
+
+  .column input {
+    width: 60%;
+    padding: 3px;
+  }
+
+  .q1 input {
+    width: 100%;
+  }
+
+  .column {
+    font-size: 20px;
+    font-family: Tinos;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .column label {
+    padding-bottom: 5px;
+  }
+
+  button img {
+    width: 35px;
+  }
+
+  button {
+    border: none;
+    width: 10%;
+    height: 90px;
+    border-radius: 5px;
+    background-color: var(--colorPrincipal);
+  }
+
+  .search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+  }
+
+  .flexBar {
+    display: flex;
   }
 }

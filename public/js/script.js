@@ -1,10 +1,12 @@
 /*import res = require("express/lib/response");*/
 
-fetch(
-  "http://192.168.43.152:1337/api/catalogues?pagination[pageSize]=30&populate=*"
-)
+fetch("http://localhost:1337/api/catalogues?pagination[pageSize]=30&populate=*")
   .then((res) => res.json())
   .then((res2) => {
+    if (window.location.pathname != "/html/index.html") {
+      const menu = document.querySelector("#buttonMenu");
+      menu.style.display = "block";
+    }
     const corps = document.querySelector(".blockHouse");
     const corps2 = document.querySelector(".produit");
     const corps3 = document.querySelector("#respr");
@@ -16,7 +18,7 @@ fetch(
         corps.innerHTML += `
               <a href="produit.html?id=${e.id}">
               <div class="newHouse">
-              <img src="http://192.168.43.152:1337${e.attributes.Photo.data?.attributes.url}"></img>
+              <img src="http://localhost:1337${e.attributes.Photo.data?.attributes.url}"></img>
                   <div class="description">
                       <div class="dColumn">
                           <h3>${e.attributes["Nom"]}</h3>
@@ -70,7 +72,7 @@ fetch(
           corps2.innerHTML += ` 
       
           <div class="caroussel">
-              <img src="http://192.168.43.152:1337${e.attributes.Photo.data?.attributes.url}" alt="">
+              <img src="http://localhost:1337${e.attributes.Photo.data?.attributes.url}" alt="">
           </div>
           <div class="fiche">
               <h3 class="glamore">${e.attributes["Nom"]}</h3>
@@ -175,7 +177,7 @@ fetch(
       // Booking
 
       const btnReservation = document.querySelector(".btn-reservation");
-      const formBooking = document.querySelector(".booking-form");
+      const formBooking = document.querySelector(".booking-details");
       const booking = document.querySelector(".block-booking");
       const produit = document.querySelector(".produit");
       const closeWindows = document.querySelector("#close");
@@ -260,24 +262,29 @@ fetch(
 // Menu
 const menu = document.querySelector("#buttonMenu");
 const profil = document.querySelector("#buttonProfil");
-const body = document.querySelector('.overlay');
+const body = document.querySelector(".overlay");
+const toggle = document.querySelector(".absolute");
+let tog = 0;
 
 menu.addEventListener("click", openMenu);
-profil.addEventListener("click", openConnexion);
-body.addEventListener('click', closeConnexion);
+profil.addEventListener("click", toggleFunc);
 
 function openMenu() {
   const showMenu = document.querySelector(".menuDesk");
   showMenu.classList.toggle("displayFlex");
 }
 
-function openConnexion() {
-  const showConnexion = document.querySelector(".formDesk");
-  showConnexion.classList.toggle("activeProfil");
-}
-function closeConnexion() {
-    const unshowConnexion = document.querySelector('.formDesk');
-    unshowConnexion.classList.remove('activeProfil');
+function toggleFunc() {
+  console.log("ok");
+  if (tog === 0) {
+    toggle.style.display = "flex";
+    tog = 1;
+    console.log(toggle.style.display);
+  } else {
+    toggle.style.display = "none";
+    tog = 0;
+    console.log(toggle.style.display);
+  }
 }
 
 mobiscroll.datepicker("#demo-booking-multiple", {

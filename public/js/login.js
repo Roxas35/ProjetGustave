@@ -1,4 +1,4 @@
-const APICALL = "http://192.168.43.152:1337/api/auth/local";
+const APICALL = "http://localhost:1337/api/auth/local";
 
 const identifier = document.querySelector(".identifier");
 const password = document.querySelector(".password");

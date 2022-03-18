@@ -52,25 +52,38 @@
                     <div class="container-booking">
                         <div class="container-calendar"> 
                         <div class="booking-details">
-                            <form class="booking-form">
-                                <h3 class="glamore">Belle Epoque</h3>
-                                <div class="select-booking">
-                                    <p>Nbs de Personnes</p>
-                                    <input class="input-number" type="number" name="numbersPeople">
+                            <form >
+                                <div class="booking-form">
+                                    <div class="column">
+                                        <label for="departure" class="glamore">Arrivé</label>
+                                        <input type="date" />
+                                      </div>
+                                      <div class="column">
+                                        <label for="arrival" class="glamore">Départ</label>
+                                        <input type="date" />
+                                      </div>
                                 </div>
-                                <div class="select-booking">
-                                    <p>Chef Cuisinier</p>
-                                    <input class="input-check" type="checkbox" name="chef">
-                                </div>
-                                <div class="select-booking">
-                                    <p>Service de nettoyage</p>
-                                    <input class="input-check" type="checkbox" name="cleaning">
-                                </div>
-                                <div class="fiche-end">
-                                    <div id="respr">
+                                <div class="booking-form">
+                                    <h3 class="glamore">Belle Epoque</h3>
+                                    <div class="select-booking">
+                                        <p>Nbs de Personnes</p>
+                                        <input class="input-number" type="number" name="numbersPeople">
                                     </div>
-                                    <button action="submit" class="btn-booking">Confirmer</button>
+                                    <div class="select-booking">
+                                        <p>Chef Cuisinier</p>
+                                        <input class="input-check" type="checkbox" name="chef">
+                                    </div>
+                                    <div class="select-booking">
+                                        <p>Service de nettoyage</p>
+                                        <input class="input-check" type="checkbox" name="cleaning">
+                                    </div>
+                                    <div class="fiche-end">
+                                        <div id="respr">
+                                        </div>
+                                        <button action="submit" class="btn-booking">Confirmer</button>
+                                    </div>
                                 </div>
+                                
                             </form>
                         </div>
                     </div>

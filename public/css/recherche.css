@@ -1,5 +1,6 @@
 /* Page recherche */
 .houseSearch {
+  position: flex;
   display: flex;
   justify-content: space-around;
   margin-top: 50px;
@@ -7,7 +8,6 @@
   min-height: 100vh;
   max-height: 100%;
 }
-
 
 .categories {
   display: flex;
@@ -141,18 +141,17 @@ input[type="checked"]:checked {
 .newHouse {
   display: flex;
   width: 100%;
-  height: 200px;
+  max-height: 500px;
   border-radius: 5px;
   border: 1px solid var(--colorPrincipal);
   margin-bottom: 40px;
 }
 
 .newHouse img {
-  height: 100%;
-  max-width: 20vw;
-  min-width: 20vw;
+  min-height: 100%;
+  max-width: 30%;
   border-radius: 5px;
-  background-size: contain;
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -218,7 +217,7 @@ span {
     padding: 20px 40px;
     margin-bottom: 50px;
     margin-top: -45px;
-    background-color: #FFF;
+    background-color: #fff;
   }
   input[type="range"] {
     height: 34px;
@@ -252,7 +251,7 @@ span {
     background: var(--colorPrincipal);
     border-radius: 5px;
   }
-  
+
   input[type="range"]::-moz-range-thumb {
     box-shadow: 1px 1px 1px var(---colorPrincipal);
     border: 1px solid var(--colorPrincipal);
@@ -264,7 +263,7 @@ span {
     -webkit-appearance: none;
     margin-top: -4px;
   }
-  
+
   input[type="range"]::-ms-thumb {
     box-shadow: 1px 1px 1px var(---colorPrincipal);
     border: 1px solid var(--colorPrincipal);
@@ -276,7 +275,7 @@ span {
     -webkit-appearance: none;
     margin-top: -4px;
   }
-  
+
   input[type="range"]::-ms-track {
     width: 100%;
     height: 5.5px;
